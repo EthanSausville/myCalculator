@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./CSS/style.css">
+
+		<title>Calculator</title>
+	</head>
+	<body onresize="javascriptCSS()">
+		<div class="container">
+			<div class="row">
+				<div id="input" class="txt-blue no-overflow"></div>
+			</div>
+			<div class="row">
+				<div id="output" class="txt-green no-overflow"></div>
+			</div>
+			<div id="calculator">
+				<div class="row">
+					<button type="button" id="clearBtn" value="" onclick="clearButton()" class="btn btn-dark txt-blue bold">C</button>
+					<button type="button" id="divideBtn" value="/" onclick="operatorButton(this)" class="btn btn-dark txt-blue bold">&divide;</button>
+					<button type="button" id="timesBtn" value="*" onclick="operatorButton(this)" class="btn btn-dark txt-blue bold">&times;</button>
+					<button type="button" id="deleteBtn" value="" onclick="deleteButton()" class="btn btn-dark txt-blue">Del</button>
+				</div>
+				<div class="row">
+					<button type="button" id="oneBtn" value="1" onclick="numberButton(this)" class="btn btn-light">1</button>
+					<button type="button" id="twoBtn" value="2" onclick="numberButton(this)" class="btn btn-light">2</button>
+					<button type="button" id="threeBtn" value="3" onclick="numberButton(this)" class="btn btn-light">3</button>
+					<button type="button" id="minusBtn" value="-" onclick="operatorButton(this)" class="btn btn-dark txt-blue bold">&minus;</button>
+				</div>
+				<div class="row">
+					<button type="button" id="fourBtn" value="4" onclick="numberButton(this)" class="btn btn-light">4</button>
+					<button type="button" id="fiveBtn" value="5" onclick="numberButton(this)" class="btn btn-light">5</button>
+					<button type="button" id="sixBtn" value="6" onclick="numberButton(this)" class="btn btn-light">6</button>
+					<button type="button" id="plusBtn" value="+" onclick="operatorButton(this)" class="btn btn-dark txt-blue bold">&plus;</button>
+				</div>
+				<div class="row">
+					<button type="button" id="sevenBtn" value="7" onclick="numberButton(this)" class="btn btn-light">7</button>
+					<button type="button" id="eightBtn" value="8" onclick="numberButton(this)" class="btn btn-light">8</button>
+					<button type="button" id="nineBtn" value="9" onclick="numberButton(this)" class="btn btn-light">9</button>
+					<button type="button" id="answerBtn" value="" onclick="answerButton()" class="btn btn-dark txt-blue">Ans</button>
+				</div>
+				<div class="row">
+					<button type="button" id="zeroBtn" value="0" onclick="numberButton(this)" class="btn btn-double btn-light">0</button>
+					<button type="button" id="decimalBtn" value="." onclick="numberButton(this)" class="btn btn-light bold">.</button>
+					<button type="button" id="equalsBtn" value="" onclick="equalsButton()" class="btn btn-dark txt-green bold">=</button>
+				</div>
+			</div>
+			
+			
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="./Script/script.js"></script>
+	</body>
+</html>
